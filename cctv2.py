@@ -19,7 +19,7 @@ ap.add_argument("-c", "--conf", required=True,
 	help="path to the JSON configuration file")
 args = vars(ap.parse_args())
 
-# filter warnings, load the configuration and initialize the Dropbox
+# filter warnings, load the configuration 
 # client
 warnings.filterwarnings("ignore")
 conf = json.load(open(args["conf"]))
